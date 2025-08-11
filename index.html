@@ -47,7 +47,7 @@ Im U17-RLT gibt es für Platz 7 die gleiche Punktzahl wie im U15-RLT für Platz 
 Die Punktetabellen sind im Idealfall zueinander so austariert, dass sich leistungsstarke Spieler einer AK leistungsgerecht in den Punkteregionen von Spielern der nächsthöheren Altersklasse einsortieren. Die Einführung des JWS war mit der Idee begleitet, die Realitätsnähe der Ranglisten kritisch zu begleiten und im Bedarfsfall die Punktetabellen entsprechend anzupassen. Der Beobachtungszeitraum muss ausreichend gewählt werden (z.B. 1 Jahr), damit die Auswirkungen allfälliger Anpassungen im Hinblick auf den 12-Monats-Zeitraum tatsächlich beobachtbar sind.
 </p>
 <h4>
-Anpassungen im JWS
+Anpassungen der Punktetabellen
 </h4>
 <p>
 Im Zeitraum 2020-2024 wurden mehrere Anpassungen vorgenommen und deren Wirkung beobachtet: Bereits zum 1.1.2021 wurde das Punkteverhältnis U11:U13 von 1:10 auf 1:12 gesetzt, sowie U13:15 von 1:9 auf 1:12 gesetzt, da sich gezeigt hat, dass Spieler der jeweils jüngeren Altersklasse zu hoch in der jeweils höheren Altersklasse einsortiert waren.
@@ -55,78 +55,167 @@ Im Zeitraum 2020-2024 wurden mehrere Anpassungen vorgenommen und deren Wirkung b
 <p>
 Zum 1.1.2024 wurde die Bepunktung internationaler Turniere der Altersklasse U15 ab Platz 9 und weniger abgewertet, da sich bei einigen dieser Turniere das Achtelfinale relativ einfach erreichen ließ. Zudem wurde die Liste relevanter U15-Turniere um sehr weit entfernte Turniere gestrichen, um längere (Flug-)Reisen bei schwächer besetzten Turnieren zu vermeiden (Stichwort "Turniertourismus").
 </p>
-<p>Den DBV Ausschuss für Jugend erreichen regelmäßig Hinweise auf weitere Optimierungsmöglichkeiten, die in manchen Fällen gerechtfertigt sind, in anderen Fällen eher Einzelmeinungen oder besondere Fälle darstellen. Zur Beurteilung, ob auffällige Phänomene auch in der Breite vorkommen, wären für belastbare Aussagen datenbasierte Analysen über längere Beobachtungszeiträume hilfreich, z.B. unter Betrachtung der durchgeführten Turniere, der jeweils verwendeten Ranglistenposition der Teilnehmer sowie deren Matchergebnisse und Turnierplatzierungen.
+<p>
+Den DBV Ausschuss für Jugend erreichen regelmäßig Hinweise auf weitere Optimierungsmöglichkeiten, die in manchen Fällen gerechtfertigt sind, in anderen Fällen eher Einzelmeinungen oder besondere Fälle darstellen. Zur Beurteilung, ob auffällige Phänomene auch in der Breite vorkommen, wären für belastbare Aussagen datenbasierte Analysen über längere Beobachtungszeiträume hilfreich, z.B. unter Betrachtung der durchgeführten Turniere, der jeweils verwendeten Ranglistenposition der Teilnehmer sowie deren Matchergebnisse und Turnierplatzierungen.
 </p>
 <h4>
 Kriterien zur Beurteilung der Güte der Punktetabellen
 </h4>
 <p>
-Es stellt sich in diesem Zusammenhang die Frage, welche Daten und Methoden für ...
+Es stellt sich in diesem Zusammenhang die Frage, welche Daten und Methoden für einen definierten Beobachtungszeitraum geeignet sind, um Aussagen über die Eignung der Punktetabellen machen zu können, d.h. wie gut die Ranglisten die Realität abbilden. Nach Recherche in Fachzeitschriften wie z.B. in <a href="https://www.degruyterbrill.com/journal/key/jqas/html"><em>Journal of Quantitative Analysis in Sports</em></a> oder generell zum Thema <em>Mathematics and Sports</em> haben sich folgende Methoden herauskristallisiert.
+</p>
+<strong>
+Methode 1: Vorher-Nachher-Vergleich ("Seeding vs. Ranking"): 
+</strong>
+<p>
+Es werden die Ergebnislisten eines Turniers mit den Setzlisten verglichen. Eine höhere Korrelation der beiden Listen weist auf eine bessere Abbildung der Spielstärke durch die Rangliste hin. Falls die Setzlisten also strikt nach der aktuellen Rangliste erstellt sind, ist diese als realitätsnäher zu bezeichnen, je genauer eine Ergebnisliste einer Setzliste ähnelt. 
+</p>
+<p>
+Bsp.: die Spieler mit den Setzplätzen 1, 2, 3, 4 erreichen zum Turnierende die Platzierungen 1, 2, 4, 9 (50% Trefferquote). Hätten sie die Platzierungen 1,2,3,7 erreicht, wäre die Trefferquote 75%, da 3 von 4 Platzierungen den Setzplätzen entsprechen. 
+</p>
+<p>
+Auch wenn man für dieses Verfahren die Metrik in % weiter verfeinern könnte (z.B. durch Verwendung gewichteter Abweichungen: "wie weit ist die Platzierung vom Setzplatz entfernt?"), sind 2 Nachteile zu erkennen: eine Analyse betrifft meistens nur einen Teil der Turnierteilnehmer, da bei vielen Turnieren lediglich die Hälfte oder weniger Spieler gesetzt sind. Zudem ist nicht beobachtbar, gegen welche Gegner ein Spieler gewonnen oder verloren hat.
+</p>
+<strong>
+Methode 2: Vorhersage des Spielausgangs (Match Prediction Accuracy): 
+</strong>
+<p>
+Bei dieser Methode wird evaluiert, wie gut die Rangliste (als Setzliste) den tatsächlichen Turnierverlauf voraussagt. Dazu wird der Anteil der Spiele berechnet, in denen derjenige Spieler gewinnt, der in der Rangliste die bessere Position hat, wie z.B. "Der Anteil erwarteter Siege am Turnier XY ist 68%". Erwartete Siege werden in der Literatur auch mit "korrekt vorhergesagten Siegen" bezeichnet, passend zum englischen Begriff (vgl. Überschrift). Eine übliche Messlatte auch in anderen Sportarten ist 75% <sup><a href="#referenzen">1,2</a></sup>. Angepasst ans JWS ist das so zu interpretieren, dass die Anzahl erwarteter Siege in etwa dieser Messlatte entsprechen sollte.
+</p>
+<p>
+Im Vergleich zum Vorher-/Nachher-Vergleich ist die Methode feinkörniger, da jedes Match einzeln bewertet wird, und sie ist sehr robust gegen Ausreißer (z.B. Überraschungssiege, Ausscheiden wg. Verletzung). Außerdem funktioniert sie auch bei unvollständigen Turnierergebnissen, falls z.B. die letzte Runde (Platzierungsspiele) nicht ausgespielt wird.
+</p>
+<p>
+Aufgrund der genannten Vorteile, aber insbesondere auch weil alle Turnierteilnehmer, und nicht nur diejenigen in den Setzplätzen in die Analyse aufgenommen werden, wurde in der Studie Match Prediction Accuracy als Methode ausgewählt. Es sind zwar Verfeinerungen der Methode denkbar, die noch aussagekräftigere Analysewerte liefern, die aber im Rahmen dieser Studie nicht mit vertretbarem Aufwand durchführbar waren. Beispiel: Sieg gegen sehr starken Gegner wird besser bewertet als Sieg gegen nur leicht besseren Gegner. 
+</p>
+<p>
+Ziel ist es, mit dieser Methode die Güte der Punktetabellen bewerten zu können (Betrachtung der 75%-Messlatte), aber auch um Zeiträume vergleichen zu können, in denen Turniere mit den jeweils gültigen Ranglistensystemen bzw. Punktetabellen durchgeführt wurden.
+</p>
+<h4>
+Datenbeschaffung 
+</h4>
+<p>
+Für die Datenanalyse sind für die Betrachtungszeiträume <strong>a) alle Ranglisten</strong> der jeweiligen Kalenderwochen sowie <strong>b) Turnierdaten</strong> (Turnierbezeichnung, Datum, Daten aller Teilnehmer, alle Matchergebnisse und Namen jeder Begegnung etc.) notwendig. Diese Daten liegen nur zum Teil in verwendbarer Form vor und sind i.A. verteilt veröffentlicht.
+</p>
+<p>
+<strong>a) Ranglisten U19:</strong> sind unter <a href="https://dbv.turnier.de/ranking/ranking.aspx?rid=238">dbv.turnier.de</a> und <a href="https://www.badminton.de/der-dbv/jugend-wettkampf/ranglistentabelle/">badminton.de</a> online verfügbar inkl. aller Archivversionen seit 2019, allerdings im HTML-Format, was nur mit aufwändiger Webscraping Technik automatisiert zugreifbar ist. Bei badminton.de stehen die Ranglistentabellen für alle Kalenderwochen zusätzlich als Excel-Download zur Verfügung, was nach Abwägung des Zugriffsaufwandes als Datenbasis gewählt wurde. Technisch lädt ein eigens erstelltes Python Skript alle seit dem letzten Lauf neuen Ranglistentabellen herunter und liest sie in eine SQLite3 Datenbank ein.
+</p>
+<p>
+<strong>b) Turnierdaten:</strong> stehen zwar unter https://dbv.turnier.de/ zur Verfügung, allerdings ebenfalls im HTML-Format und zusätzlich sind aus Datenschutzgründen Datenelemente wie z.B. die SpielerID bei den Matches (Reiter "Spiele") weggelassen bzw. erst ein paar Klicks weiter recherchierbar, so dass diese Möglichkeit aus Aufwandsgründen ebenfalls nicht weiterverfolgt wurde. Als Lösungsweg lädt ein eigens erstelltes Python Skript die Turnierdateien von turnier.de herunter, liest sie per BTP Software (Badminton Turnier Planer) ein und exportiert alle Spiele des Turniers mitsamt Ergebnissen als Excel-Datei.
+</p>
+<h4>
+Match Prediction Accuracy eines Turniers 
+</h4>
+<p>
+Mit der Verknüpfung aller Matches eines Turniers aus der oben genannten Excel-Datei und der zum Turnierdatum gültigen Rangliste können die erwarteten Ergebnisse je Konkurrenz visuell dargestellt und tabellarisch zusammengefasst werden. Tabelle 1 zeigt ein Ausschnitt aus der mit zusätzlichen Daten angereicherte "Spiele"-Datei des 1. DBV A-RLT U15/U19 2025:
 </p>
 
-
-
-
-<figure>
-<img src="timeline_nr-of-player-ids-dbv.png" alt="Alternativer Text" class="standard-picture" />
-<figcaption>Abb. 1: Anzahl Turnierspieler/innen U19 im DBV gesamt. Das sind Spieler/innen mit SpielerID, die in den Ranglistentabellen aufgeführt sind (unabhängig von den gespielten Disziplinen). Mit JWS wird das Jugendwettkampfsystem bezeichnet, das seit 1.1.2020 im DBV U19 Turnierbetrieb eingeführt ist.</figcaption>
-</figure>
-
-<strong>Bemerkungen:</strong>
-<ul>
-    <li>Für jede Kalenderwoche (KW) ist die Summe aller Spieler(-IDs) veranschaulicht, die in der DBV-Ranglistentabelle in dieser jeweiligen KW geführt wird.
-    </li>
-    <li>Die Corona-"Plateaus" sind gut zu erkennen (z.B. KWs 11-26/2020). In diesen Zeiträumen war die RL-Tabelle "eingefroren", d.h. es kamen keine Turnierwertungen hinzu.
-    </li>
-    <li>Das "Anfahren" nach der Corona-Zeit ist am grossen Anstieg zu erkennen. In dieser Zeit fielen keine Turniere aus der Wertung. In KW 26/2022 beim "Auftauen" der RL-Tabelle fielen auf einen Schlag alle Turniere aus der Wertung, die mehr als 12 Monate zurücklagen.
-    </li>
-    <li>Jeweils in KW 1 fallen die letztjährigen U19-2 Jahrgänge aus der Wertung, da sie den Jugendbereich verlassen. Deshalb ist bei jedem Übergang KW 52 &rarr; KW 1 ein Einschnitt zu sehen.
-    </li>
-    <li>Die analoge Grafik für Spieler(-IDs) im BWBV (s. Abb. 2) zeigt einen ähnlichen Verlauf.
-    </li>
-</ul>
-
-<figure>
-<img src="timeline_nr-of-player-ids-bwbv.png" alt="Alternativer Text" class="standard-picture" />
-<figcaption>Abb. 2: Anzahl Turnierspieler/innen U19 im BWBV.</figcaption>
-</figure>
+<a href="./images/Tabelle-1.jpg"><img width="300px" src="./images/Tabelle-1.jpg"/></a>
+<figcaption>Tabelle 1 (Vergrösserung durch Anklicken): mit Ranglistenpositionen (Spalten H und J) angereicherte "Spiele"-Datei: enthält für ein Turnier alle Spiele mit Ergebnissen in den Einzel-Disziplinen (je Match eine Zeile).
+</figcaption>
 
 <p>
-Die Anzahl aktiver Turnierspieler für eine konkrete Kalenderwoche ist in Abbildung 3 visualisiert. "Aktiv" bedeutet, dass die gezählten Spieler/innen in den letzten 12 Monaten an mindestens 1 Turnier teilgenommen haben. In allen BLVs gibt es wesentlich mehr U19-Spieler/innen mit einer SpielerID, d.h. nur ein Teil davon nimmt an Wettkämpfen teil.
+Jede Zeile in Tabelle 1 enthält Angaben zu einem Match. Ist der Gewinner grün gefärbt, hat der Spieler mit der besseren Ranglistenposition (Spalten H und J) gewonnen (erwarteter Sieg), andernfalls ist die Zelle rot gefärbt. Am Dateiende wird eine Zusammenfassung der Matchausgänge je Konkurrenz berechnet (im Beispiel nur Einzel, kein Doppel/Mixed), welche in Tabelle 2 gut darstellt, wie weit die Anteile erwarteter Siege in jeder Konkurrenz ungefähr von der oben genannten 75%-Messlatte abweichen.
 </p>
 
-<figure>
-<img src="nr-of-players-per-blv.png" alt="Alternativer Text" class="standard-picture" />
-<figcaption>Abb. 3: Anzahl Turnierspieler/innen U19 je Landesverband.</figcaption>
-</figure>
+<a href="./images/Tabelle-2.jpg"><img width="300px" src="./images/Tabelle-2.jpg"/></a>
+<figcaption>Tabelle 2 (Vergrösserung durch Anklicken): erwartete und unerwartete Siege je Einzel-Konkurrenz in einem Beispiel-Turnier.
+</figcaption>
 
-Interessant ist auch die Fragestellung, inwiefern die grössten BLVs aus Abbildung 3 auch diejenigen mit den leistungsstärksten Spieler/innen sind (oder auch nicht). Dazu sind in den Abbildungen 4 und 5 die Anzahl Turnierspieler je BLV dargestellt, die sich unter den besten 50 bzw. 100 Ranglistenplätzen in einer bestimmten Kalenderwoche befinden (gerechnet über alle Disziplinen hinweg).
+<p>
+Die Rangliste bildet in diesem Beispiel also offensichtlich die realen Spielstärken ausreichend ab, so dass Kritiken am JWS in diesem Beispiel nicht in der Breite haltbar sind, sondern sich wie oben vermutet an Einzelfällen und Ausreißern orientieren. Es spricht andererseits grundsätzlich nichts dagegen, das Ranglistensystem kritisch zu beobachten und ggf. mittels Stellschrauben anzupassen, und so ggf. die Anteile erwarteter Siege zu verändern. 
+</p>
+<p>
+Eine Veränderung in Richtung 100% ist jedoch nicht anzustreben, denn wenn 100 % der Spiele vom besser gerankten Spieler gewonnen werden, dann wäre das System "perfekt prognostizierend", aber auch langweilig und womöglich überreguliert. Es gäbe keine Überraschungen mehr, keine dynamische Entwicklung, keine Nachwuchstalente, die "durchbrechen" können.
+</p>
+<p>
+Ein realistischer Zielwert liegt deshalb deutlich unter 100 %, in der Literatur oft bei ca. 65 - 75 %. Was als "gute" oder "faire" Quote gilt, hängt aber stark vom Sport, Altersniveau, Leistungsdichte und der Qualität der Rangliste ab. In der Praxis gelten folgende Werte als grobe Richtwerte aus anderen Badminton-Verbänden und auch Sportarten:
+</p>
+<p>
+<strong>65–75 %: Guter Bereich</strong><br />
+Tritt auf bei gut abgestimmten Ranglistensystemen in Nachwuchssportarten wie Badminton, Tennis, Tischtennis. Die Rangliste widerspiegelt die Spielstärke überwiegend gut, lässt aber auch Raum für Überraschungen. Talente, Formschwankungen oder unklare Klassifizierungen (z. B. neue Spieler ohne viele Turniere) führen zu den übrigen 25–35 %.
+</p>
+<p>
+<strong>&lt; 65 %: Rangliste zu ungenau</strong><br />
+Entweder ist das Punktesystem nicht aussagekräftig genug, oder es gibt zu viele "Taktikturniere" (Punktesammeln in leichten Feldern), oder das Niveau der Spieler ist extrem dicht, oder das Alterssprung-System (U17 spielt in U19 etc.) führt zu Verzerrungen. In dem Fall könnte eine Justierung der Punktetabelle sinnvoll sein.
+</p>
+<p>
+<strong>&gt; 75 %: Zu vorhersehbar / zu starr</strong><br />
+Das System zielt womöglich zu sehr auf vergangene Erfolge ab, und bildet zu wenig die aktuelle Leistung ab. Spielern mit Potenzial wird erschwert, sich "hochzuspielen".
+</p>
+<p>
+Einzelne Ausreißer in der Match Prediction Accuracy sind kein Beweis für ein fehlerhaftes Ranglistensystem. Erst dauerhafte Abweichungen in ganzen Konkurrenzen sind relevant. Der Ausreißer 79% in Tabelle 2 ist als Einzelwert zu betrachten.
+</p>
+<p>
+Bei kleinen Teilnehmerfeldern ist die Statistik mit Vorsicht zu genießen und jeweils nach Gründen für große Abweichungen zu suchen (Bsp.: E-RLT, ME U11, 3 Teilnehmerinnen: 1 Anfängerin, 1 mittlere Spielstärke, 1 Fortgeschrittene; ergibt oft 100% erwartete Siege).
+</p>
+<h4>
+Match Prediction Accuracy bei Vergleich von Turnierserien
+</h4>
+<p>
+Zum Vergleich der Güte von Ranglistensystemen wurden in der Studie die erwarteten Siege aller A-RLT U15-U19 nach dem aktuellen Ranglistensystem (Januar – Juni 2025) mit allen A-RLT U13-U19 im Herbst 2018, also vor der Einführung des JWS, verglichen. Die Aufbereitung der Daten für die DBV-RLT aus dem Jahr 2018 erwies sich als ziemlich aufwändig aufgrund der unterschiedlichen Struktur.
+</p>
 
-<p />
+<a href="./images/Tabelle-3.jpg"><img width="300px" src="./images/Tabelle-3.jpg"/></a>
+<figcaption>Tabelle 3 (Vergrösserung durch Anklicken): Vergleich der DBV-RLT 2018 mit den A-RLT im 1. Halbjahr 2025.
+</figcaption>
 
+<p>
+Der Vergleich in Tabelle 3 zeigt für diese Serie nicht nur eine Ebenbürdigkeit, sondern sogar leicht bessere Mittelwerte im JWS im Vergleich zum alten Ranglistensystem. Das bedeutet, dass grundsätzlich die Ranglisten im JWS die realen Leistungsstärken mindestens gleich gut oder besser abbilden als im alten Ranglistensystem.
+</p>
 
-<figure>
-<img src="nr-of-players-per-blv_in-top100.png" alt="Alternativer Text" class="standard-picture" />
-<figcaption>Abb. 4: Anzahl TOP 100 Turnierspieler/innen U19 je Landesverband.</figcaption>
-</figure>
+<h4>
+Bewertung weiterer Turnierserien auf B-E-Ebene
+</h4>
+<p>
+Die Aufbereitung von Turnierdaten im alten Ranglistensystem (vor 2020) war im Rahmen dieser Studie zu aufwändig, aufgrund der einheitlichen Struktur im JWS aber für 2020 und später gut möglich. Deshalb kann an dieser Stelle kein Vergleich vorgenommen werden, vielmehr wird die Anwendung der gewählten Methode auf Turnierserien aus 2025 in Tabelle 4 dargestellt.
+</p>
 
-<figure>
-<img src="nr-of-players-per-blv_in-top50.png" alt="Alternativer Text" class="standard-picture" />
-<figcaption>Abb. 5: Anzahl TOP 50 Turnierspieler/innen U19 je Landesverband.</figcaption>
-</figure>
+<a href="./images/Tabelle-4.jpg"><img width="300px" src="./images/Tabelle-4.jpg"/></a>
+<figcaption>Tabelle 4 (Vergrösserung durch Anklicken): Vier Spalten B-/C-/D-/E-RLT mit je vier Tabellen; die unterste Tabelle in jeder Spalte zeigt jeweils die gewichteten Mittelwerte der Turniere, die darüber aufgeführt sind.
+</figcaption>
 
+<p>
+Bei B-RLT sind die gewichteten Mittelwerte im sehr guten Bereich, außer im ME U13 (61 %). Bei näherer Betrachtung der unerwarteten Siege im ME U13 in den Turnierdateien ist zu erkennen, dass in vielen Fällen durch an A-RLT U11/U13 erkämpften hohe Punktezahlen und damit bessere Ranglistenposition die Unterlegenen zu gut eingestuft waren (überbewertete Spieler). 
+</p>
+<p>
+Gut zu erkennen ist auch, dass auf tieferen Turnierebenen größere Ausreißer bei einzelnen Konkurrenzen auftreten (0 %, 33 %, 100 % bei E-RLT), die zumeist bei sehr kleinen Teilnehmerfeldern vorkommen.
+</p>
 
-Der Vergleich von Abb. 3 mit Abb. 4 bzw. Abb. 5 zeigt in der Tat die oben vermutete Korrelation, erkennbar in den zahlenmässig grössten BLVs, die auch die meisten Spieler/innen in den TOP 50 bzw. TOP 100 haben. Grafiken früherer Auswertungen (KW46/2023, KW04/2024) zeigten ähnliche Ergebnisse.
-
+<h4>
+Fazit
+</h4>
+<p>
+Die Anwendung der Methode Match Prediction Accuracy hat sich im Rahmen der vorliegenden Studie bewährt, um die Güte von Ranglisten im Wettkampfbetrieb zu bewerten. Die visuelle Darstellung der (un-)erwarteten Siege und die tabellarische Darstellung der gewichteten Mittelwerte der jeweiligen Konkurrenzen zeigt die Bereiche hoher Güte und ggf. auch Schwachstellen des Systems auf.
+</p>
+<p>
+Der verwendete Ansatz ließe sich um weitere Analysen erweitern wie z.B. die Identifikation von überbewerteten Spielern, also Spielern, die in mehreren Turnieren deutlich unter ihrem Ranglistenplatz abschneiden. Oder auch das Tracking von Spielern über 6–12 Monate hinweg mit der Frage, wie stark ihre Ranglistenposition bei stabiler Turnierleistung variiert.
+</p>
+<p>
+Anhand der betrachteten Turnierserien ist erkenntlich, dass die Ranglisten und Punktetabellen im JWS eine vergleichbare und teilweise sogar höhere Güte aufweisen als im alten Ranglistensystem vor 2020.
+</p>
+<p>
+Bei weitergehender Automatisierung könnte ein Monitoring aufgebaut werden, das fortlaufend Analysen und Vergleiche dokumentiert, wie sie in dieser Studie gezeigt wurden, und so im Bedarfsfall ohne großen Aufwand auf Anomalien oder Unstimmigkeiten hinweist.
+</p>
+<p>
+Die Studie zeigt klar: Das JWS bildet die Spielstärken mindestens so gut ab wie das alte System – in einigen Bereichen sogar besser. Das belegt, dass die seit 2020 eingeführten Anpassungen grundsätzlich funktionieren.
+</p>
 <hr />
-<em>
-<strong>Zum RAIN-Projekt (<span style="text-decoration: underline;">ra</span>nking <span style="text-decoration: underline;">in</span>sights):</strong>
-<p />
-Mit einer Eigenentwicklung in Python werden alle DBV Ranglistentabellen seit 1.1.2020, also dem Bestehen des Jugendwettkampfsystems (JWS) in eine SQLite3-Datenbank importiert. Die Datensätze enthalten Spielerinformationen, deren Vereine/Bezirke/BLVs/Gruppen, und sind nach Disziplinen getrennt. Mittels Python Scripts werden daraus Statistiken aus der DB erzeugt und mit <a href="https://matplotlib.org/">Matplotlib</a> visualisiert.
-<p />
-Geplant sind weitere Auswertungen, z.B. Anzahl aktiver Spieler/BLV im Zeitverlauf. Später auch Import von Turnierergebnissen und Aussagen über die Güte der RL-Tabelle (direkter Vergleich 2 Gegner, Qualität der Setzlisten etc.)
-<p />
-&copy; Edi Klein, 9. Mai 2025 (edi.klein@badminton.de) 
-</em>
+
+<p>
+Rückfragen und Anregungen an edi.klein@badminton.de (Vorsitz im DBV-Ausschuss für Jugend)
+</p>
+
+<h4 id="referenzen">
+Referenzen
+</h4>
+<p>
+(1) footballseeding.com (2019): How does Seeding Matter;
+<a href="https://www.footballseeding.com/news/how-does-seeding-matter/">footballseeding.com/news/how-does-seeding-matter/</a>
+</p>
+<p>
+(2) Laszlo Csado (2020): A Paradox of Tournament Seeding
+<a href="https://www.researchgate.net/publication/346143589_A_paradox_of_tournament_seeding">researchgate.net/publication/346143589_A_paradox_of_tournament_seeding</a>
+</p>
   </body>
 </html>
