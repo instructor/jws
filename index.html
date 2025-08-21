@@ -29,7 +29,7 @@
 Seit 2020 sorgt das Jugendwettkampfsystem (JWS) des Deutschen Badmintonverbandes für eine einheitliche, bundesweite Ranglistenwertung. Eine vom Autor dieses Textes durchgeführte Studie prüft, wie gut die Ranglisten die tatsächliche Spielstärke abbilden. Die Auswertung zahlreicher Turnierdaten zeigt: Das JWS ist mindestens so treffsicher wie das frühere System – oft sogar besser.
 </b>
 <p>
-Die wichtigste Neuerung im JWS ist eine gemeinsame bundesdeutsche Rangliste. Die Punktevergabe erfolgt nach einheitlichen Tabellen – abgestuft nach Altersklasse (U9–U19) und Turnierniveau (A–E).
+Die wichtigste Neuerung im JWS ist eine gemeinsame bundesdeutsche <a href="https://dbv.turnier.de/ranking/ranking.aspx?rid=238">Rangliste</a>. Die Punktevergabe erfolgt nach einheitlichen <a href="https://www.badminton.de/der-dbv/jugend-wettkampf/allgemeine-ranglisten-bestimmungen/">Tabellen</a> – abgestuft nach Altersklasse (U9–U19) und Turnierniveau (A–E).
 </p>
 <p>
 Statt einzelner Ranglisten pro Ebene (Region, Bezirk, Landesverband, Gruppe, national) fließen die besten fünf Turnierergebnisse der letzten zwölf Monate in die Disziplinrangliste ein. Damit lassen sich unterschiedliche Spielstärken und Turnierniveaus in einer einzigen Rangliste abbilden – vorausgesetzt, die Punktetabellen sind gut austariert. 
@@ -41,7 +41,7 @@ Beispiel: Die Rangliste im Mädcheneinzel einer Woche zeigt alle Spielerinnen vo
 Damit die Alters- und damit auch Spielstärkeunterschiede, sowie auch die unterschiedlichen Turnierniveaus in einer einzigen Rangliste abbildbar sind, wird in den Punktetabellen entsprechend differenziert. 
 </p>
 <p>
-Beispielsweise gibt es im U17-RLT für Platz 7 die gleiche Punktzahl wie im U15-RLT für Platz 1 (Punkteverhältnis 1:7). Ein B-RLT ergibt auf jeder Turnierplatzierung 120% der gleichen Turnierplatzierung eines C-RLT (Niveauverhältnis 120%). Die aktuell gültigen Punktetabellen sind in den Ranglistenbestimmungen der DBV-Jugendspielordnung dokumentiert, die aktuellen Verhältnismäßigkeiten sind auf badminton.de veröffentlicht.
+Beispielsweise gibt es im U17-RLT für Platz 7 die gleiche Punktzahl wie im U15-RLT für Platz 1 (Punkteverhältnis 1:7). Ein B-RLT ergibt auf jeder Turnierplatzierung 120% der gleichen Turnierplatzierung eines C-RLT (Niveauverhältnis 120%). Die aktuell gültigen Punktetabellen sind in den Ranglistenbestimmungen der DBV-Jugendspielordnung dokumentiert, die aktuellen Verhältnismäßigkeiten sind auf <a href="https://www.badminton.de/der-dbv/jugend-wettkampf/allgemeine-ranglisten-bestimmungen/">badminton.de</a> veröffentlicht.
 </p>
 <p>
 Die Punktetabellen sind im Idealfall so ausgelegt, dass sich leistungsstarke Spieler einer AK leistungsgerecht in den Punkteregionen von Spielern der nächsthöheren Altersklasse einsortieren. Mit Einführung des JWS war beabsichtigt, die Realitätsnähe der Ranglisten kritisch zu begleiten und im Bedarfsfall die Punktetabellen entsprechend anzupassen. Der Beobachtungszeitraum muss ausreichend gross gewählt werden (beispielsweise 1 Jahr), damit die Auswirkungen allfälliger Anpassungen im Hinblick auf den 12-Monats-Zeitraum beobachtbar sind.
@@ -101,7 +101,8 @@ Für die Datenanalyse sind für die Betrachtungszeiträume <strong>a) alle Rangl
 <strong>a) Ranglisten U19:</strong> sind unter <a href="https://dbv.turnier.de/ranking/ranking.aspx?rid=238">dbv.turnier.de</a> und <a href="https://www.badminton.de/der-dbv/jugend-wettkampf/ranglistentabelle/">badminton.de</a> online verfügbar inkl. aller Archivversionen seit 2019, allerdings im HTML-Format, was nur mit aufwändiger Webscraping Technik automatisiert zugreifbar ist. Bei badminton.de stehen die Ranglistentabellen für alle Kalenderwochen zusätzlich als Excel-Download zur Verfügung, was nach Abwägung des Zugriffsaufwandes als Datenbasis gewählt wurde. Technisch lädt ein eigens erstelltes Python Skript alle seit dem letzten Lauf neuen Ranglistentabellen herunter und liest sie in eine SQLite3 Datenbank ein.
 </p>
 <p>
-<strong>b) Turnierdaten:</strong> stehen zwar unter https://dbv.turnier.de/ zur Verfügung, allerdings ebenfalls im HTML-Format und zusätzlich sind aus Datenschutzgründen Datenelemente wie z.B. die SpielerID bei den Matches (Reiter "Spiele") weggelassen bzw. erst ein paar Klicks weiter recherchierbar, so dass diese Möglichkeit aus Aufwandsgründen ebenfalls nicht weiterverfolgt wurde. Als Lösungsweg lädt ein eigens erstelltes Python Skript die Turnierdateien von turnier.de herunter, liest sie per BTP Software (Badminton Turnier Planer) ein und exportiert alle Spiele des Turniers mitsamt Ergebnissen als Excel-Datei.
+<strong>b) Turnierdaten:</strong> stehen zwar unter
+<a href="https://dbv.turnier.de/tournament/1f1c0de4-4148-4a10-979d-34680aa0aa30">dbv.turnier.de</a> zur Verfügung, allerdings ebenfalls im HTML-Format und zusätzlich sind aus Datenschutzgründen Datenelemente wie z.B. die SpielerID bei den Matches (Reiter "Spiele") weggelassen bzw. erst ein paar Klicks weiter recherchierbar, so dass diese Möglichkeit aus Aufwandsgründen ebenfalls nicht weiterverfolgt wurde. Als Lösungsweg lädt ein eigens erstelltes Python Skript die Turnierdateien von turnier.de herunter, liest sie per BTP Software (Badminton Turnier Planer) ein und exportiert alle Spiele des Turniers mitsamt Ergebnissen als Excel-Datei.
 </p>
 <h4>
 Match Prediction Accuracy eines Turniers 
